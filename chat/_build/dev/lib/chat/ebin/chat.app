@@ -1,0 +1,11 @@
+{application,chat,
+             [{config_mtime,1762311725},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"chat"},
+              {modules,['Elixir.Chat','Elixir.Chat.Application',
+                        'Elixir.Chat.Proxy','Elixir.Chat.ProxyServer',
+                        'Elixir.Chat.Server']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.Chat.Application',[]}}]}.
