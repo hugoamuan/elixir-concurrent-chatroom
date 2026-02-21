@@ -29,3 +29,16 @@
 3. `Chat.Server` looks up each recipient in the ETS table and uses `send/2` to deliver `{:incoming_msg, from, text}` to their proxy processes.
 4. Recipient `Chat.Proxy` processes render the message back to the respective TCP sockets.
 
+## Running the Server
+1. `mix deps.get`
+2. `mix compile`
+3. `mix run--no-halt` // `iex -S mix`
+
+## Starting the Client
+- `java ChatClient.java` # Default port
+- `java ChatClient.java <host> <port>` # Specified port
+
+## Notes
+- Server port is hardcoded in application.ex (6666)
+- Go Client - host/port is hardcoded in main.go (127.0.0.1:6666)
+
